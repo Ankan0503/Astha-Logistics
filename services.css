@@ -1,0 +1,206 @@
+.services {
+  padding-top: 15px;
+  background-color: white;
+  margin-bottom: 5px;
+  width: 100vw;
+  height: 90vh;
+}
+
+.services h1 {
+  font: bolder 35px "Roboto Slab", Arial;
+  color: rgba(45, 105, 235, 255);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.service-longcontainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-container {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  width: fit-content;
+  height: 530px;
+  margin: 0 100px;
+}
+
+.service-desp {
+  padding: 20px 7px 10px 20px;
+  background-color: rgb(233, 233, 233);
+  box-shadow: 4px 4px 20px gray;
+  border-radius: 15px;
+  margin: 15px;
+  width: 28vw;
+}
+
+.service-svg {
+  width: 26px;
+  margin-bottom: 5px;
+}
+
+.service-info h2 {
+  font: 430 24px "Roboto", Arial;
+  margin: 0 0 5px 0;
+}
+
+.service-info p {
+  margin: 0;
+  font: 350 17px "Roboto Condensed", Arial;
+  color: rgb(68, 68, 68);
+}
+
+.achievement {
+  background-color: rgb(233, 233, 233);
+  padding: 0;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 20px 0 0 20px;
+}
+
+.achievement1 {
+  display: flex;
+  width: fit-content;
+}
+
+.achievement1 svg {
+  width: 28px;
+  margin: 14px;
+}
+
+.achievement1 h3 {
+  font: 500 20px "Roboto Flex", Arial;
+}
+
+.achievement1 h3 span {
+  font-weight: 700 20px "Roboto Flex", Arial;
+  color: rgba(45, 105, 235, 255);
+}
+
+.port-img {
+  width: 30vw;
+  height: 60vh;
+  object-fit: cover;
+  object-position: right;
+  margin: 15px 40px 30px 0;
+  border: 10px solid rgb(233, 233, 233);
+}
+
+/*Tablet View*/
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .services {
+    height: 100%;
+    padding: 0 0 20px 20px;
+  }
+  .services h1 {
+    font-size: 30px;
+  }
+  .service-container {
+    margin: 0 5vw 0 0;
+  }
+  .service-desp {
+    height: max-content;
+    padding-bottom: 20px;
+    margin: 10px 0;
+  }
+  .service-svg {
+    width: 23px;
+  }
+  .service-info h2 {
+    font-size: 20px;
+  }
+  .achievement {
+    width: auto;
+    height: auto;
+    padding: 20px 0;
+  }
+  .achievement1 {
+    width: 180px;
+  }
+  .achievement1 svg {
+    width: 22px;
+  }
+  .achievement1 h3 {
+    font-size: 16px;
+    width: 50%;
+  }
+  .port-img {
+    margin: 0;
+    height: 40vh;
+    object-position: center;
+  }
+}
+
+/*Mobile View*/
+
+@media (max-width: 450px) and (orientation: portrait) {
+  .services {
+    width: 100vw;
+    height: fit-content;
+    padding-bottom: 20px;
+  }
+  .services h1 {
+    font-size: 25px;
+  }
+  .service-longcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+  }
+  .service-desp {
+    padding: 10px;
+    width: 80vw;
+  }
+  .service-svg {
+    width: 1.25rem;
+  }
+  .service-info h2 {
+    font-size: 1.2rem;
+  }
+  .service-info p {
+    font-size: 1rem;
+  }
+  .achievement {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 57vw;
+    height: fit-content;
+    border-radius: 20px 20px 0 0;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .achievement1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .achievement1 svg {
+    width: 5vw;
+    margin: 10px 0 0;
+  }
+  .achievement1 h3 {
+    font-size: 4vw;
+    margin: 2px 0 5px;
+  }
+
+  .port-img {
+    width: 80vw;
+    height: 25vh;
+    margin: 0;
+  }
+}

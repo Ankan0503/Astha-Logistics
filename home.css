@@ -1,0 +1,141 @@
+.image {
+  font-family: "Roboto", Arial;
+  position: relative;
+}
+
+.truck-img {
+  width: 100vw;
+  height: 100vh;
+  filter: brightness(50%);
+  object-fit: cover;
+}
+
+.heading1 {
+  position: absolute;
+  width: 90%;
+  bottom: 20vw;
+  left: 60px;
+  font-size: 55px;
+  font-weight: 600;
+  color: white;
+}
+
+.heading2 {
+  position: absolute;
+  bottom: 18vw;
+  left: 60px;
+  font-size: 30px;
+  font-weight: 300;
+  font-style: italic;
+  color: white;
+}
+
+.quote-button {
+  position: absolute;
+  bottom: 12vw;
+  left: 60px;
+  background-color: rgba(45, 105, 235, 255);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 17px 23px;
+  font: 25px "Roboto Slab", Arial;
+  transition: filter 0.2s;
+}
+
+.quote-button:hover {
+  filter: brightness(87%);
+  cursor: pointer;
+}
+
+/*Laptop View*/
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .heading1 {
+    font-size: 45px;
+    bottom: 40vh;
+    left: 40px;
+  }
+
+  .heading2 {
+    font-size: 25px;
+    bottom: 36vh;
+    left: 40px;
+  }
+
+  .quote-button {
+    bottom: 20vh;
+    left: 40px;
+    padding: 15px 20px;
+    font-size: 20px;
+  }
+}
+
+/*Tablet View*/
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .truck-img {
+    width: 100%;
+  }
+  .heading1 {
+    font-size: 40px;
+    bottom: 45vh;
+    left: 30px;
+    width: 92%;
+    margin: 0 0 15px;
+  }
+
+  .heading2 {
+    font-size: 25px;
+    bottom: 40vh;
+    left: 30px;
+    width: 71%;
+    margin: 0;
+  }
+
+  .quote-button {
+    font-size: 25px;
+    bottom: 25vh;
+    left: 30px;
+    padding: 10px 15px;
+  }
+}
+
+/*Mobile View*/
+
+@media (max-width: 450px) and (orientation: portrait) {
+  .home {
+    width: 100%;
+    white-space: initial;
+  }
+
+  .truck-img {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .heading1 {
+    font-size: 1.9rem;
+    bottom: 50vh;
+    left: 20px;
+    width: 92%;
+    padding-right: 10px;
+    margin: 0;
+  }
+
+  .heading2 {
+    font-size: 1.3rem;
+    bottom: 40vh;
+    left: 22px;
+    width: 92%;
+    height: 70px;
+    margin: 0;
+  }
+
+  .quote-button {
+    font-size: 20px;
+    bottom: 25vh;
+    left: 22px;
+    padding: 10px 15px;
+  }
+}

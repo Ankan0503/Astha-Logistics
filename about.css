@@ -1,0 +1,176 @@
+.about-us {
+  padding-top: 15px;
+  background-color: rgb(233, 233, 233);
+  width: 100vw;
+  height: 95vh;
+}
+
+.about-us h1 {
+  font: bolder 35px "Roboto Slab", Arial;
+  color: rgba(45, 105, 235, 255);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description {
+  font: 300 25px "Roboto Condensed", Arial;
+  width: 90vw;
+  padding: 0 60px;
+  text-align: justify;
+  color: rgb(68, 68, 68);
+  margin-top: 15px;
+}
+
+.members {
+  display: flex;
+  justify-content: center;
+}
+
+.member-desp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  border-radius: 25px;
+  box-shadow: 6px 6px 20px gray;
+  padding: 10px 0px 50px;
+  margin: 0px 30px 0px 50px;
+  width: 25vw;
+  transition: transform 0.9s;
+}
+
+.member-desp:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.member-desp img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50px;
+}
+
+.member-desp h2 {
+  font: 600 25px "Roboto", Arial;
+  margin-bottom: 3px;
+  color: rgba(45, 105, 235, 255);
+}
+
+.designation {
+  font: 200 15px "Roboto Flex", Arial;
+  margin: 0 0 15px 0;
+}
+
+.more-info {
+  font: 350 18px "Roboto Condensed", Arial;
+  text-align: justify;
+  padding: 5px 25px;
+  margin: 0;
+}
+
+/*Laptop View*/
+
+@media (max-width: 1400px) and (min-width: 1200px) {
+  .description {
+    font-size: 23px;
+  }
+  .member-desp {
+    padding-bottom: 2vw;
+  }
+  .member-desp img {
+    width: 5vw;
+    height: 5vw;
+  }
+}
+
+/*Tablet View*/
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .about-us {
+    height: 100%;
+    padding-bottom: 20px;
+  }
+  .about-us h1 {
+    font-size: 30px;
+  }
+  .description {
+    font-size: 21px;
+    height: 150px;
+  }
+  .member-desp img {
+    width: 60px;
+    height: 60px;
+  }
+  .member-desp {
+    padding: 10px;
+    margin: 20px;
+  }
+  .member-desp h2 {
+    font-size: 21px;
+  }
+  .more-info {
+    font-size: 16px;
+    padding: 5px;
+  }
+}
+
+/*Mobile View*/
+
+@media (max-width: 450px) and (orientation: portrait) {
+  .about-us {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .about-us h1 {
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .description {
+    font-size: 18px;
+    padding: 0 20px;
+    text-align: justify;
+    margin-top: 15px;
+  }
+  .members {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .member-desp {
+    width: 70vw;
+    height: fit-content;
+    padding: 10px 10px 0;
+    margin: 0;
+  }
+  .member-desp img {
+    width: 60px;
+    height: 60px;
+  }
+  .member-desp h2 {
+    font-size: 18px;
+    margin-bottom: 3px;
+  }
+  .designation {
+    font-size: 12px;
+    margin: 0 0 8px 0;
+  }
+  .more-info {
+    font-size: 15px;
+    text-align: justify;
+    padding: 10px 10px;
+  }
+  .member-desp:active {
+    transform: scale(1.2);
+  }
+}

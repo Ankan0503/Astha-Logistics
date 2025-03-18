@@ -1,0 +1,78 @@
+.footer {
+  background-color: rgb(14, 57, 89);
+  color: white;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr 150px 1fr;
+  text-align: center;
+  padding: 0 50px;
+}
+
+.footer-top h3 {
+  font: 400 20px "Roboto", Arial;
+}
+
+.footer-top p {
+  font: 300 20px "Roboto Condensed", Arial;
+  margin: 5px;
+}
+.quick-links a {
+  font: 300 20px "Roboto Condensed", Arial;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.quick-links a:hover {
+  background-color: white;
+  color: rgba(45, 105, 235);
+  border-radius: 5px;
+}
+
+.footer-bottom {
+  font: 300 15px "Roboto Slab", Arial;
+  border-top: 1px solid #fff;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  padding: 10px 0;
+}
+
+/*Mobile View*/
+
+@media (max-width: 450px) and (orientation: portrait) {
+  .footer {
+    width: 100vw;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-top h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .footer-top p {
+    font-size: 17px;
+  }
+
+  .quick-links a {
+    font-size: 17px;
+  }
+
+  .footer-bottom {
+    font-size: 15px;
+  }
+
+  .footer-bottom p {
+    padding: 5px 0;
+  }
+}

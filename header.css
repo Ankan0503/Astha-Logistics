@@ -1,0 +1,240 @@
+.navbar {
+  font-family: "Roboto Slab", Arial;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 15px 0 12px;
+  width: 100vw;
+  z-index: 100;
+  background-color: rgb(210, 210, 210);
+  box-shadow: 0px 5px 10px rgb(171, 171, 171);
+  /*clip-path: polygon(0 0, 100% 0, calc(100% - 20px) 100%, 20px 100%);*/
+}
+
+.left-section {
+  font-size: 27px;
+  font-weight: 700;
+  color: rgba(45, 105, 235, 255);
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.logo {
+  width: 90px;
+}
+
+.hamburger {
+  position: fixed;
+  right: 7vw;
+  z-index: 200;
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: rgba(45, 105, 235, 255);
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.nav-menu ul li a:hover {
+  background: #f0f0f0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 98;
+}
+
+.middle-section.active {
+  right: 0;
+}
+
+.middle-section ul {
+  display: flex;
+  list-style: none;
+}
+
+.middle-section ul a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(68, 68, 68);
+  margin-right: 40px;
+  transition: color 0.3s;
+}
+
+.middle-section ul a:hover {
+  color: rgba(45, 105, 235, 255);
+  font-weight: 470;
+}
+
+.right-section {
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.call-logo {
+  width: 24px;
+  display: flex;
+  margin-right: 7px;
+}
+
+.contact-number {
+  color: rgb(68, 68, 68);
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 17px;
+}
+
+.right-section button {
+  font-family: "Roboto", Arial;
+  font-size: 15px;
+  padding: 12px;
+  border: none;
+  background-color: rgba(45, 105, 235, 255);
+  color: white;
+  border-radius: 7px;
+  transition: filter 0.2s;
+}
+
+.right-section button:hover {
+  filter: brightness(92%);
+  cursor: pointer;
+}
+
+/*Laptop View*/
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .left-section {
+    font-size: 2vw;
+  }
+  .logo {
+    width: 6vw;
+  }
+  .middle-section ul a {
+    font-size: 1.3vw;
+    margin-right: 30px;
+  }
+  .call-logo {
+    width: 22px;
+  }
+  .contact-number {
+    font-size: 1.2vw;
+  }
+  .right-section button {
+    font-size: 13px;
+  }
+}
+
+/*Tablet View*/
+
+@media (min-width: 768px) and (max-width: 1200px) and (orientation: portrait) {
+  .navbar {
+    height: 60px;
+  }
+  .logo {
+    width: 80px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .middle-section {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    padding: 50px 20px 20px;
+    transition: right 0.3s ease;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 199;
+  }
+  .middle-section ul {
+    flex-direction: column;
+    gap: 3em;
+    margin-top: 100px;
+    padding-left: 40px;
+  }
+  .middle-section ul a {
+    display: block;
+    width: 180px;
+    padding: 15px;
+    border-bottom: 1px solid #d7d7d7;
+  }
+  .right-section {
+    display: none;
+  }
+}
+
+/*Mobile View*/
+
+@media (max-width: 450px) and (orientation: portrait) {
+  .navbar {
+    width: 100vw;
+    position: fixed;
+    padding: 13px;
+  }
+  .left-section {
+    font-size: 23px;
+    padding-left: 20px;
+  }
+  .logo {
+    width: 70px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .middle-section {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60vw;
+    height: 100vh;
+    background-color: #fff;
+    padding: 50px 20px 20px;
+    transition: right 0.3s ease;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 199;
+  }
+  .middle-section ul {
+    flex-direction: column;
+    gap: 3em;
+    margin-top: 50px;
+    padding-left: 20px;
+  }
+  .middle-section ul a {
+    display: block;
+    width: 47vw;
+    padding: 15px;
+    border-bottom: 1px solid #d7d7d7;
+  }
+  .right-section {
+    display: none;
+  }
+}

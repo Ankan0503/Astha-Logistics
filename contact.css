@@ -1,0 +1,392 @@
+.contact {
+  padding-top: 15px;
+  background: linear-gradient(
+    to bottom right,
+    #2d69eb,
+    #7793b6,
+    #bec3cc,
+    #ffffff
+  );
+  width: 100vw;
+  height: 90vh;
+}
+
+.contact h1 {
+  font: bolder 35px "Roboto Slab", Arial;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-container {
+  display: flex;
+}
+
+.info-input {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  margin: 0 0 0 50px;
+  padding: 20px 40px 40px;
+  width: 38vw;
+  height: 65vh;
+  border-radius: 10px;
+}
+
+.info-input p {
+  font: 350 20px "Roboto Slab", Arial;
+  margin: 10px 0 0;
+}
+
+.name,
+.contactinfo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+label {
+  color: #03a9f5;
+  font: 500 17px "Roboto", Arial;
+  display: block;
+  margin-top: 20px;
+}
+
+input {
+  box-sizing: border-box;
+  font: 400 15px "Roboto", Arial;
+  border: 1px solid rgb(68, 68, 68);
+  border-radius: 5px;
+  height: 35px;
+  width: 19vw;
+  margin-right: 10px;
+  padding: 0 10px;
+}
+
+textarea {
+  font: 400 18px "Roboto", Arial;
+  resize: none;
+  width: 37.3vw;
+  height: 25vh;
+  border: 1px solid rgb(68, 68, 68);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#sendmessage {
+  font: 400 18px "Roboto", Arial;
+  margin-top: 15px;
+  padding: 10px 10px 10px 10px;
+  width: 100px;
+  background-color: #ff578b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+#sendmessage:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  filter: brightness(90%);
+}
+
+.get-in-touch {
+  background-color: rgba(14, 57, 89, 0.4);
+  margin-left: 30px;
+  padding: 10px 20px 1px;
+  border-radius: 10px;
+  width: 45vw;
+  height: 35vh;
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+.get-in-touch h2 {
+  font: 500 25px "Roboto Slab", Arial;
+  width: fit-content;
+  margin-top: 0;
+  margin-bottom: 25px;
+  margin-left: 5px;
+}
+
+.office-info,
+.office-contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circleicon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 7px;
+  width: fit-content;
+  height: 1.5vh;
+}
+
+.circleicon span {
+  background-color: white;
+  padding: 7px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.circleicon ion-icon {
+  font-size: 20px;
+}
+
+.circleicon h3 {
+  font: 500 23px "Roboto Flex", Arial;
+  margin: 0 10px;
+  color: rgb(2, 35, 52);
+}
+
+.address {
+  width: 62%;
+}
+
+.address p,
+.business-hour p,
+.office-number p,
+.office-email p {
+  font: 300 20px "Roboto Condensed", Arial;
+  width: fit-content;
+  margin: 0 0 10px 45px;
+  color: white;
+}
+
+.office-email a,
+.office-number a {
+  color: white;
+}
+
+.contact-rightside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.locate-us {
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgba(14, 57, 89, 0.4);
+  margin-left: 30px;
+  border-radius: 10px;
+  width: 47.5vw;
+  height: 33.5vh;
+}
+
+.locate-us p {
+  font: 500 25px "Roboto Slab", Arial;
+  padding-left: 25px;
+  margin-top: 10px;
+}
+
+.gmaps {
+  margin: 15px 10px 10px;
+  border: 5px solid white;
+  display: flex;
+}
+
+.gmaps iframe[src*="google"] {
+  width: 70vh;
+  height: 100%;
+}
+
+/*Laptop View*/
+
+@media (max-width: 1400px) and (min-width: 1200px) {
+  .info-input {
+    height: 66vh;
+  }
+  .contact-rightside {
+    gap: 10px;
+  }
+  .get-in-touch {
+    padding-right: 7px;
+    height: 36.5vh;
+  }
+  .get-in-touch h2 {
+    font-size: 23px;
+  }
+  .locate-us {
+    height: 34vh;
+  }
+  .locate-us p {
+    font-size: 23px;
+  }
+  .gmaps iframe[src*="google"] {
+    width: 35vw;
+  }
+}
+
+/*Tablet View*/
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .contact {
+    height: 100%;
+    padding-bottom: 20px;
+  }
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .info-input {
+    width: 70vw;
+    height: fit-content;
+    margin: 0;
+  }
+  input {
+    width: 35vw;
+  }
+  textarea {
+    width: 68vw;
+  }
+  .get-in-touch {
+    width: 70vw;
+    height: fit-content;
+    padding: 20px 40px 15px 40px;
+    margin: 0;
+    gap: 12px;
+  }
+  .locate-us {
+    flex-direction: column;
+    width: 70vw;
+    padding: 20px 40px 40px 40px;
+    margin: 0;
+  }
+  .locate-us p {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .gmaps {
+    margin: 10px 0 0;
+  }
+  .gmaps iframe[src*="google"] {
+    width: 70vw;
+    height: 30vh;
+  }
+}
+
+/*Mobile View*/
+
+@media (max-width: 450px) and (orientation: portrait) {
+  .contact {
+    height: fit-content;
+    padding-bottom: 20px;
+  }
+
+  .contact h1 {
+    font-size: 25px;
+    margin: 10px 0 20px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .info-input {
+    width: 80vw;
+    height: fit-content;
+    margin: 0 0 20px;
+    padding: 10px 20px 20px;
+  }
+
+  .info-input p {
+    font-size: 18px;
+  }
+
+  .name,
+  .contactinfo {
+    flex-direction: column;
+  }
+
+  label {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  input {
+    width: 80vw;
+  }
+
+  textarea {
+    width: 75vw;
+  }
+
+  #sendmessage {
+    width: 30vw;
+    font-size: 15px;
+    padding: 8px;
+    margin: 5px 0 0;
+  }
+
+  .contact-rightside {
+    align-items: center;
+  }
+
+  .get-in-touch {
+    width: 80vw;
+    height: fit-content;
+    margin: 0;
+  }
+
+  .get-in-touch h2 {
+    font-size: 20px;
+  }
+
+  .office-info,
+  .office-contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .circleicon {
+    width: 90vw;
+  }
+
+  .circleicon h3 {
+    font-size: 20px;
+  }
+
+  .circleicon ion-icon {
+    font-size: 17px;
+  }
+
+  .address p,
+  .business-hour p,
+  .office-number p,
+  .office-email p {
+    font-size: 18px;
+    width: 75vw;
+    margin-bottom: 12px;
+  }
+
+  .locate-us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90vw;
+    height: 50vh;
+    margin: 0;
+  }
+
+  .locate-us p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .gmaps {
+    margin: 0 20px;
+  }
+
+  .gmaps iframe[src*="google"] {
+    width: 80vw !important;
+    height: 40vh !important;
+  }
+}
